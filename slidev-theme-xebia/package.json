@@ -1,0 +1,51 @@
+{
+  "name": "slidev-theme-xebia",
+  "description": "Xebia theme for Slidev",
+  "license": "UNLICENSED",
+  "homepage": "https://xebia.com",
+  "bugs": "https://github.com/xebia/presentation-templates",
+  "version": "1.0.1",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "xebia"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "slidev": ">=0.19.3"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "screenshot": "slidev export example.md --format png",
+    "export": "slidev export example.md",
+    "finalize-pdf": "gs -sDEVICE=pdfimage24 -dDownScaleFactor=3 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=example-final.pdf example-export.pdf",
+    "lint": "eslint --ext .ts,.js,.vue ."
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.46.3",
+    "@slidev/types": "^0.46.3",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-vue": "^9.20.1",
+    "playwright-chromium": "^1.41.1",
+    "typescript": "^5.3.3"
+  },
+  "slidev": {
+    "defaults": {
+      "colorSchema": "light",
+      "highlighter": "shiki",
+      "titleTemplate": "%s - Xebia",
+      "fonts": {
+        "mono": "Monaco",
+        "sans": "Arial",
+        "serif": "Roboto Slab"
+      },
+      "favicon": "https://xebia.com/wp-content/themes/xebia-theme/images/favicon.png"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@slidev/cli": "^0.47.3",
+    "playwright-chromium": "^1.41.2"
+  },
+  "scripts": {
+    "dev": "slidev slides.md --open",
+    "build": "slidev build slides.md",
+    "screenshot": "slidev export slides.md --format png",
+    "export": "slidev export slides.md",
+    "finalize-pdf": "gs -sDEVICE=pdfimage24 -dDownScaleFactor=3 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=slides-final.pdf slides-export.pdf"
+  }
+}

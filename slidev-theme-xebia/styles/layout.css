@@ -1,0 +1,96 @@
+:root {
+  --slidev-theme-primary: #6C1D5F;
+  --slidev-theme-cta: #FF6200;
+
+  --slidev-theme-primary-accent: #4A1E47;
+  --slidev-theme-cta-accent: #06A99C;
+
+  --slidev-theme-secondary: #9D92B2;
+  --slidev-theme-secondary-accent: #5C4F61;
+
+  --slidev-theme-white: #FFFFFF;
+  --slidev-theme-white-accent: #F7F8FC;  
+
+  --slidev-theme-grey1: #F4F4F4;
+  --slidev-theme-grey2: #DEDEDE;
+  --slidev-theme-grey3: #A1A1A1;
+  --slidev-theme-grey4: #5A5A5A;
+  --slidev-theme-grey5: #222222;
+
+  --slidev-theme-chart1: #5C4F61;
+  --slidev-theme-chart2: #533754;
+  --slidev-theme-chart3: #4A1E47;
+  --slidev-theme-chart4: #5B1E53;
+  --slidev-theme-chart5: #6C1D5F;
+  --slidev-theme-chart6: #793B74;
+  --slidev-theme-chart7: #855889;
+  --slidev-theme-chart8: #91759E;
+  --slidev-theme-chart9: #9D92B2;
+  --slidev-theme-chart10: #B8AFCF;
+  --slidev-theme-chart11: #D3CCEC;
+
+  --slidev-code-font-size: 1rem;
+  --slidev-code-line-height: 1.5rem;
+}
+
+.btn-primary {
+  @apply px-2 p-1 rounded cursor-pointer hover:opacity-80;
+  color: var(--slidev-theme-white);
+  background-color: var(--slidev-theme-primary);
+}
+
+.slidev-page {
+  @apply h-full;
+}
+
+.slidev-layout {
+  @apply color-black text-4 pa-12 bg-cover bg-no-repeat w-full absolute;
+
+  h1 {
+    color: var(--slidev-theme-primary);
+    @apply text-7.5 line-height-8.625 h-20 max-w-3xl font-600 text-balance;
+  }
+
+  h2 {
+    color: var(--slidev-theme-primary);
+    @apply text-4.5 line-height-5.175 mb-2 font-600 text-balance;
+  }
+
+  h3 {
+    @apply text-4 line-height-4.6 text-balance font-600;
+  }
+
+  table {
+    @apply mb-4;
+  }
+  th, td {
+    @apply border;
+    border-color: var(--slidev-theme-chart9);
+    background-color: var(--slidev-theme-white);
+  }
+  th {
+    @apply font-600;
+    color: var(--slidev-theme-white);
+    background-color: var(--slidev-theme-chart10);
+  }
+
+  a {
+    border-bottom: 0;
+    color: var(--slidev-theme-cta);
+  }
+  a:hover {
+    color: var(--slidev-theme-cta);
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style-image: url(../img/shapes/bullet.svg);
+  }
+
+  .grid div:nth-child(2) th {
+    background-color: var(--slidev-theme-chart5);
+  }
+  .grid div:nth-child(3) th {
+    background-color: var(--slidev-theme-chart3);
+  }
+}
